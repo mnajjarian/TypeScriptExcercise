@@ -1,3 +1,20 @@
+interface ElementSet {
+    'div': Element,
+    'button': Element
+}
+
+enum Colors {
+    Green,
+    Red,
+    Blue,
+    Orange
+}
+
+let Elements = {
+    'div': document.createElement('div'),
+    'button': document.createElement('button')
+}
+
 class colorChange {
     div: Element;
     constructor(div: Element) {
