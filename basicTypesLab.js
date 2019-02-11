@@ -6,3 +6,12 @@ var div = document.createElement('div');
 button.textContent = 'Change Color';
 document.body.appendChild(button);
 document.body.appendChild(div);
+div.style.width = squareSize;
+div.style.height = squareSize;
+var colorChange = function (elem, color) {
+    elem.style.backgroundColor = color;
+    return true;
+};
+button.onclick = function (event) {
+    colorChange(div, color);
+};
